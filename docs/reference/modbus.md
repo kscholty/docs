@@ -127,6 +127,7 @@ register:
   address: 40070
   type: holding # holding or input
   decode: int32 # int16|32|64, uint16|32|64, float32|64 and u|int32s + float32s
+  bitmask: 2 # Optional: a bitmask that is applied to the read value. Here the mask is 0000000000000010b, ignored if value is 0
 scale: -1.0 # floating point factor applied to result, e.g. for kW to W conversion
 timeout: 2s # timeout, without unit in ns
 ```
